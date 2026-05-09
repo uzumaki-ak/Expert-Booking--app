@@ -12,8 +12,6 @@ web-build/
 
 *.orig.*
 
-.env
-.env.local
 
 *.log
 npm-debug.*
@@ -32,3 +30,4 @@ android/
 
 expo-env.d.ts
 # @end expo-cli
+config.bat
