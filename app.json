@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Bookr",
+    "slug": "expert-booking-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "bookr",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bookr.app"
+    },
+    "android": {
+      "package": "com.bookr.app",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000",
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
