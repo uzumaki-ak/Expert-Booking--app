@@ -4,20 +4,27 @@
     "slug": "expert-booking-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "scheme": "bookr",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
+      "icon": "./assets/icon.png",
       "bundleIdentifier": "com.bookr.app"
     },
     "android": {
       "package": "com.bookr.app",
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      }
     },
     "web": {
       "bundler": "metro",
-      "output": "single"
+      "output": "single",
+      "favicon": "./assets/icon.png"
     },
     "plugins": [
       "expo-router",
@@ -36,7 +43,11 @@
     "extra": {
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "746ebe8c-f5f6-4a66-9779-df69f2499f02"
       }
-    }
+    },
+    "owner": "lazy-horse"
   }
 }
